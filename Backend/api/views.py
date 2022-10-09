@@ -8,7 +8,7 @@ class CreateUserView(generics.CreateAPIView):
     permission_classes = (AllowAny,)
 
 
-class Profileview(viewsets.ModelViewSet):
+class ProfileviewSet(viewsets.ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = serializers.ProfileSerializer
 
