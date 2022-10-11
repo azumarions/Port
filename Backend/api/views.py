@@ -29,7 +29,7 @@ class AnimalViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AnimalSerializer
 
     def perform_create(self, serializer):
-        serializer.save(aniaml=self.request.user)
+        serializer.save(animal=self.request.user)
 
 
 class CommentViewSet(viewsets.ModelViewSet):
