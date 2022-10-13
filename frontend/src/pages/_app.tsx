@@ -1,6 +1,8 @@
 import { AppProps } from 'next/app'
-import { store } from 'redux/app/store'
+import Head from 'next/head'
+import { store } from 'ducks/app/store'
 import { Provider } from 'react-redux'
+import { createGlobalStyle } from 'styled-components'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
