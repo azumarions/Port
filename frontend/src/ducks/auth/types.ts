@@ -11,6 +11,8 @@ export interface File extends Blob {
   export interface PROPS_PROFILE {
     id: number;
     name: string;
+    statusMessage: string;
+    description: string;
     img: File | null;
   }
   
